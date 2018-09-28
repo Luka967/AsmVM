@@ -1,0 +1,28 @@
+﻿
+BITS
+
+INSTRUCTION |             16 literal
+CONSTANT    | 16 pointer  16 literal
+REGISTER    | 16 pointer  16 literal  8  access  16 access
+MEMORY      | 16 pointer  8  literal  8  access  16 access
+
+INSTRUCTIONS
+
+Code    Name   Arguments  Description
+---------------------------------------------------
+0x0000  BRK               stop execution
+0x0001  MOV16  REG CON    move register <- constant
+0x0002  MOV16  REG REG    move register <- register
+0x0003  MOV16  MEM CON    move memory <- constant
+0x0004  MOV16  MEM REG    move memory <- register
+
+REGISTERS
+               JMP/RET
+Code    Name   Preserved Description
+---------------------------------------------------
+0x0000  IP     /         instruction pointer
+0x0001  SP     X         stack pointer
+0x0002  A      X         general-purpose
+0x0003  B      X         general-purpose
+0x0004  C      X         general-purpose
+0x0005  D      X         general-purpose
