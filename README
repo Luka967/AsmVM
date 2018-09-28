@@ -1,5 +1,5 @@
 This is a 16-bit processor emulator. Performance matters not - it is intended to be used as a playground.
 
-I (Luka967) will use this project as a ladder for developing a scripting/programming language tatered to my needs.
+I (Luka967) will use this project as a ladder for developing a scripting/programming language catered to my needs.
 
 Critique is welcome - I do not know much about pure machine code, I am merely assuming it's something like this.
